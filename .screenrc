@@ -1,0 +1,4 @@
+startup_message off
+caption string "%{=b g.}%{+ w}%n %{+ y}%t"
+caption always
+hardstatus alwayslastline "%{=bu rw}%w"
