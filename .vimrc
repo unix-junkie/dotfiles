@@ -1,6 +1,8 @@
 "
 " .vimrc
 "
+" vim:ft=vim
+"
 
 set nocp
 if &term == "xterm"
@@ -14,7 +16,6 @@ if &t_Co > 2 || has("gui_running")
         set hls
 endif
 
-filetype plugin indent on
 set backspace=indent,eol,start
 set nu
 
@@ -42,6 +43,9 @@ if has("gui_running")
 		" Native MS-Windows Vim
 		" See http://vim.wikia.com/wiki/VimTip21
         	lang C
+
+		" Do not use ~/vimfiles
+		let &runtimepath='~/.vim'.','.&runtimepath
 
 		set clipboard=unnamed
 		set guioptions+=a
@@ -169,6 +173,9 @@ else
 		" Windows console
 		lang C
 
+		" Do not use ~/vimfiles
+		let &runtimepath='~/.vim'.','.&runtimepath
+
 		set clipboard=unnamed
 
 		setglobal fileencoding=CP1251
@@ -212,3 +219,30 @@ set eb
 set vb
 set laststatus=2
 set history=1000
+
+" Vundle
+filetype off
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-syntastic/syntastic'
+
+call vundle#end()
+filetype plugin indent on
+
+" Syntastic BEGIN
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+" Syntastic END
+
+" Fugitive BEGIN
+set statusline+=%{fugitive#statusline()}
+" Fugitive END
