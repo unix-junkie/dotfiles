@@ -1,0 +1,3 @@
+update -P -d -R
+checkout -P -R
+commit -R
