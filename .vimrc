@@ -6,14 +6,14 @@
 
 set nocp
 if &term == "xterm"
-        let &term = "xterm-256color"
+	let &term = "xterm-256color"
 endif
 
 if &t_Co > 2 || has("gui_running")
-        if !exists("syntax_on")
-                syn on
-        endif
-        set hls
+	if !exists("syntax_on")
+		syn on
+	endif
+	set hls
 endif
 
 set backspace=indent,eol,start
@@ -25,11 +25,11 @@ set termencoding=UTF-8
 set encoding=UTF-8
 
 if has("gui_running")
-        if has("gui_gtk2")
+	if has("gui_gtk2")
 		" Also Cygwin Vim, GTK+ UI
 		" See http://vim.wikia.com/wiki/Using_the_Windows_clipboard_in_Cygwin_Vim
 		set guifont=Courier\ New\ 12
-        elseif has("x11")
+	elseif has("x11")
 		let os = substitute(system('uname -s'), "\n", "", "")
 		if os == "Linux"
 			set guifont=-monotype-courier\ new-semilight-r-normal--*-120-*-*-m-*-iso10646-1
@@ -39,10 +39,10 @@ if has("gui_running")
 	elseif has("gui_macvim")
 		set guifont=Courier\ New:h18
 		set noantialias
-        elseif has("gui_win32")
+	elseif has("gui_win32")
 		" Native MS-Windows Vim
 		" See http://vim.wikia.com/wiki/VimTip21
-        	lang C
+		lang C
 
 		" Do not use ~/vimfiles
 		let &runtimepath='~/.vim'.','.&runtimepath
@@ -54,18 +54,18 @@ if has("gui_running")
 		setglobal fileencoding=CP1251
 		set fileencodings=UCS-BOM,UTF-8,CP1251
 		set termencoding=CP866
-        endif
+	endif
 
-        set guioptions+=beFT
+	set guioptions+=beFT
 	if version >= 700
-        	set showtabline=2
+		set showtabline=2
 		set guitablabel=%f
 	endif
-        set nomousehide
-        let c_comment_strings=1
+	set nomousehide
+	let c_comment_strings=1
 
 	colorscheme elflord
-        set bg=dark
+	set bg=dark
 
 	hi Normal	guifg=cyan		guibg=darkblue
 	hi Comment	guifg=darkgreen		guibg=darkblue
@@ -83,23 +83,23 @@ if has("gui_running")
 	endif
 
 	"" Custom highlighting -- CDE-like colours
-        
+
 	"hi Normal guibg=#fff7e9 guifg=Black
-        "if version >= 700
-        "        hi Visual guibg=Black guifg=#fff7e9
-        "else
-        "        hi Visual guibg=#fff7e9 guifg=Black
-        "endif
-        "hi NonText guibg=#9397a5
-        "hi Menu guibg=#aeb2c3 guifg=Black
+	"if version >= 700
+	"        hi Visual guibg=Black guifg=#fff7e9
+	"else
+	"        hi Visual guibg=#fff7e9 guifg=Black
+	"endif
+	"hi NonText guibg=#9397a5
+	"hi Menu guibg=#aeb2c3 guifg=Black
 
 	"" Other highlighting
 
-        "hi Cursor guibg=Green guifg=NONE
-        "hi lCursor guibg=Cyan guifg=NONE
+	"hi Cursor guibg=Green guifg=NONE
+	"hi lCursor guibg=Cyan guifg=NONE
 
-        "hi Constant gui=NONE guibg=grey95
-        "hi Special gui=NONE guibg=grey95
+	"hi Constant gui=NONE guibg=grey95
+	"hi Special gui=NONE guibg=grey95
 else
 	map <F10>	:q<CR>
 	set mouse=a
