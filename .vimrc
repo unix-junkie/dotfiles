@@ -228,6 +228,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
@@ -246,3 +247,7 @@ let g:syntastic_check_on_wq = 1
 " Fugitive BEGIN
 set statusline+=%{fugitive#statusline()}
 " Fugitive END
+
+" Airline BEGIN
+let g:airline#extensions#tabline#enabled = 1
+" Airline END
