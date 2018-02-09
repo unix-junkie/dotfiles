@@ -1,6 +1,8 @@
 pcm.!default {
-	type hw
-	card Headset
+	type plug
+	slave {
+		pcm "hw:CARD=Headset"
+	}
 }
 
 ctl.!default {
