@@ -1,13 +1,23 @@
 pcm.!default {
 	type plug
 	slave {
-		pcm "dmixer"
+		pcm "asymed"
 	}
 }
 
 ctl.!default {
 	type hw
 	card Headset
+}
+
+pcm.asymed {
+	type asym
+	playback {
+		pcm "dmixer"
+	}
+	capture {
+		pcm "hw:CARD=Headset"
+	}
 }
 
 pcm.dmixer {
