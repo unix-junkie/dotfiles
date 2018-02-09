@@ -1,11 +1,19 @@
 pcm.!default {
 	type plug
 	slave {
-		pcm "hw:CARD=Headset"
+		pcm "dmixer"
 	}
 }
 
 ctl.!default {
 	type hw
 	card Headset
+}
+
+pcm.dmixer {
+ 	type dmix
+ 	ipc_key 1024
+ 	slave {
+		pcm "hw:CARD=Headset"
+	}
 }
