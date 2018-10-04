@@ -232,6 +232,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'uguu-org/vim-matrix-screensaver'
 
 call vundle#end()
 filetype plugin indent on
