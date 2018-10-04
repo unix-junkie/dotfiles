@@ -26,6 +26,8 @@ XTerm.*.Scrollbar.background:	#c4c2bd
 *.vt100.allowTcapOps:		True
 *.vt100.allowTitleOps:		True
 *.vt100.allowWindowOps:		True
+*.vt100.altIsNotMeta:		True
+*.vt100.altSendsEscape:		True
 *.vt100.answerbackString:	xterm
 *.vt100.background:		#fff7e9
 *.vt100.boldColors:		True
@@ -47,9 +49,11 @@ XTerm.*.Scrollbar.background:	#c4c2bd
 *.vt100.color15:		#ffffff
 *.vt100.colorBDMode:		False
 *.vt100.deleteIsDEL:		False
+*.vt100.eightBitInput:		False
 *.vt100.forceBoxChars:		True
 *.vt100.foreground:		#000000
 *.vt100.loginShell:		True
+*.vt100.metaSendsEscape:	False
 *.vt100.saveLines:		32767
 *.vt100.scrollBar:		True
 *.vt100.scrollbar.background:   #c4c2bd
