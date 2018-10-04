@@ -1,0 +1,60 @@
+!
+! XTerm.ad
+!
+! vim:ft=xdefaults:
+!
+
+XTerm.*.SimpleMenu.background:	#dcdad5
+XTerm.*.SimpleMenu.*.foreground:#4b6983
+*.mainMenu.background:		#dcdad5
+*.mainMenu.*.foreground:	#4b6983
+*.vtMenu.background:		#dcdad5
+*.vtMenu.*.foreground:		#4b6983
+*.fontMenu.background:		#dcdad5
+*.fontMenu.*.foreground:	#4b6983
+*.tekMenu.background:		#dcdad5
+*.tekMenu.*.foreground:		#4b6983
+XTerm.*.Scrollbar.foreground:	#000000
+XTerm.*.Scrollbar.background:	#c4c2bd
+
+*.termName:			xterm-256color
+*.toolBar:			False
+
+*.vt100.activeIcon:		False
+*.vt100.allowColorOps:		True
+*.vt100.allowFontOps:		True
+*.vt100.allowTcapOps:		True
+*.vt100.allowTitleOps:		True
+*.vt100.allowWindowOps:		True
+*.vt100.answerbackString:	xterm
+*.vt100.background:		#fff7e9
+*.vt100.boldColors:		True
+*.vt100.color0:			#000000
+*.vt100.color1:			#a80000
+*.vt100.color2:			#00a800
+*.vt100.color3:			#a85700
+*.vt100.color4:			#0000a8
+*.vt100.color5:			#a800a8
+*.vt100.color6:			#00a8a8
+*.vt100.color7:			#a8a8a8
+*.vt100.color8:			#575757
+*.vt100.color9:			#ff5757
+*.vt100.color10:		#57ff57
+*.vt100.color11:		#ffff57
+*.vt100.color12:		#5757ff
+*.vt100.color13:		#ff57ff
+*.vt100.color14:		#57ffff
+*.vt100.color15:		#ffffff
+*.vt100.colorBDMode:		False
+*.vt100.deleteIsDEL:		False
+*.vt100.forceBoxChars:		True
+*.vt100.foreground:		#000000
+*.vt100.loginShell:		True
+*.vt100.saveLines:		32767
+*.vt100.scrollBar:		True
+*.vt100.scrollbar.background:   #c4c2bd
+*.vt100.scrollbar.foreground:   #000000
+*.vt100.scrollbar.thumb:        gray
+*.vt100.titleModes:		2
+*.vt100.vt100Graphics:		True
+*.vt100.wideChars:		True

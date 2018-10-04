@@ -1,0 +1,25 @@
+!
+! XTerm.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "../XTerm"
+
+XTerm.SimpleMenu*font:		-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+*.mainMenu*font:		-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+*.vtMenu*font:			-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+*.fontMenu*font:		-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+*.tekMenu*font:			-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+
+*.menubar*font:			-monotype-arial-medium-r-normal--*-90-*-*-p-*-iso10646-1
+
+! False: use core X fonts
+! True: use client-side fonts (via Xft)
+*.vt100.renderFont:		True
+
+*.vt100.faceName:		Courier New:antialias=false
+*.vt100.faceSize:		12
+*.vt100.utf8:			1
+*.vt100.utf8Fonts:		True
+*.vt100.utf8Title:		True

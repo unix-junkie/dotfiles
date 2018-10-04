@@ -1,0 +1,7 @@
+!
+! KOI8RXTerm.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "ru_RU.KOI8-R/XTerm"

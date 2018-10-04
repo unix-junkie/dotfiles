@@ -1,0 +1,15 @@
+! vim:ft=xdefaults:
+
+URxvt.background: #fff7e9
+URxvt.foreground: #000000
+URxvt.cursorColor: #000000
+URxvt.pointerColor: #000000
+URxvt.pointerColor2: #fff7e9
+URxvt.borderColor: #fff7e9
+URxvt.intensityStyles: True
+
+!URxvt.font: -monotype-courier new-medium-r-normal--*-120-*-*-m-*-iso10646-1
+!URxvt.boldFont: -monotype-courier new-bold-r-normal--*-120-*-*-m-*-iso10646-1
+!URxvt.italicFont: -monotype-courier new-medium-i-normal--*-120-*-*-m-*-iso10646-1
+!URxvt.boldItalicFont: -monotype-courier new-bold-i-normal--*-120-*-*-m-*-iso10646-1
+URxvt.font: xft:Courier New:size=12:antialias=false

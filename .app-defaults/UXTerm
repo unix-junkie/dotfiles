@@ -1,0 +1,7 @@
+!
+! UXTerm.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "ru_RU.UTF-8/XTerm"
