@@ -111,6 +111,7 @@ else
 			\ || &term == "xterm-color"
 			\ || &term == "xterm-256color"
 			\ || &term == "screen"
+			\ || &term == "screen.xterm-256color"
 			\ || &term == "dtterm"
 			\ || &term == "kterm"
 			\ || &term == "cygwin"
