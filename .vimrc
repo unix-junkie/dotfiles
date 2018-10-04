@@ -220,6 +220,8 @@ set eb
 set vb
 set laststatus=2
 set history=1000
+set modeline
+set modelines=10
 
 " Vundle
 filetype off
