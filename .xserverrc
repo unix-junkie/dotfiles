@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# ~/.xserverrc
+#
+
+case "$(uname -s)" in
+	CYGWIN_NT-*|MINGW_NT-*|MINGW64_NT-*|MSYS_NT-*|MINGW32)
+		##exec X -dpi 96 -listen tcp -fullscreen -clipboard -primary -unixkill -nowinkill "$@"
+		exec X -dpi 96 -listen tcp -multiwindow -clipboard -primary -unixkill -nowinkill -wgl -nohostintitle "$@"
+		;;
+	*)
+		# Adding any arguments to startx (e.g.: startx -- :0)
+		# results in the below settings being *ignored*, and
+		# X server being run with the default arguments
+		# (see /usr/bin/startx):
+		#
+		# Xorg vt1 -keeptty -auth /tmp/serverauth.xyz
+		#
+		# See also https://bugs.freedesktop.org/show_bug.cgi?id=3078
+		#
+		##exec X -dpi 96 "$@"
+		exec X -listen tcp -auth "${HOME}/.Xauthority"
+		;;
+esac
