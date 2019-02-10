@@ -38,6 +38,7 @@ export EDITOR="${VISUAL}"
 export PAGER='less'
 export LESS='-P--More--?Pt(%Pt\%)'
 export BROWSER='seamonkey'
+export NNTPSERVER='news.mozilla.org'
 export MC_XDG_OPEN='run-mailcap'
 emacs --daemon >/dev/null 2>&1
 
