@@ -100,7 +100,7 @@ export XUSERFILESEARCHPATH="%L/%N.ad:%N.ad:${XAPPLRESDIR}/%L/%N:${XAPPLRESDIR}/%
 # GTK3
 export GTK_CSD=0
 export GTK_DISABLE_CSD=1
-##export GTK_THEME=Raleigh
+export GTK_THEME='Raleigh-Reloaded'
 export GTK_OVERLAY_SCROLLING=0
 export LD_PRELOAD="libgtk3-nocsd.so.0${LD_PRELOAD:+:$LD_PRELOAD}"
 
