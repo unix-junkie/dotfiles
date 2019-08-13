@@ -131,6 +131,7 @@ abcdefghijklmnopqrstuvwxyz
 alias rdesktop='rdesktop -0 -N -x lan -r sound:local -r lspci -r clipboard:PRIMARYCLIPBOARD'
 alias gqview='geeqie'
 alias gitex='gitext.sh'
+alias smartcvs='smartcvs.sh'
 alias smartgit='/usr/share/smartgit/bin/smartgit.sh'
 alias slack='(xhost +SI:localuser:ihateslack; sudo -u ihateslack ~ihateslack/bin/slack; xhost -SI:localuser:ihateslack)'
 alias drracket='LC_CTYPE=en_US.UTF-8 drracket'
