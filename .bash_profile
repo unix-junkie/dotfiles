@@ -90,7 +90,22 @@ export NLS_LANG='RUSSIAN_RUSSIA.AL32UTF8'
 export NLS_COMP='LINGUISTIC'
 export NLS_SORT='RUSSIAN_AI'
 
-export PATH="${JAVA_HOME}/bin:${JRE_HOME}/bin:${PATH}:/sbin:/usr/sbin:/opt/p4v/bin:/opt/eclipse:/opt/idea/bin:/opt/GitExtensions:/opt/seamonkey:${ORACLE_HOME}/bin:${HOME}/bin"
+export PATH="\
+${JAVA_HOME}/bin:\
+${JRE_HOME}/bin:\
+${PATH}:\
+/sbin:\
+/usr/sbin:\
+/opt/trinity/bin:\
+/opt/trinity/sbin:\
+/opt/p4v/bin:\
+/opt/eclipse:\
+/opt/idea/bin:\
+/opt/GitExtensions:\
+/opt/smartcvs/bin:\
+/opt/seamonkey:\
+${ORACLE_HOME}/bin:\
+${HOME}/bin"
 
 # X11
 export XAPPLRESDIR="${HOME}/.app-defaults"
