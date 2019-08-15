@@ -1,0 +1,10 @@
+[Settings]
+AutoHideAccelerators=false
+MenuAltKeyNavigation=true
+MenuDropShadow=false
+MenuOpacity=0.9
+MenuTransparencyEngine=Disabled
+PopupMenuDelay=250
+ScrollablePopupMenus=false
+SemiTransparentRubberband=false
+

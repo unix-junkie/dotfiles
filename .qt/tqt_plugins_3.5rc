@@ -1,0 +1,19 @@
+[opt]
+trinity/lib/trinity/plugins/styles/asteroid.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/dotnet.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-06-21T03:03:26^e
+trinity/lib/trinity/plugins/styles/highcolor.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/highcontrast.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/keramik.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/kthemestyle.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/light.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/phasestyle.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-06-21T03:03:26^e
+trinity/lib/trinity/plugins/styles/plastik.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-14T10:23:08^e
+trinity/lib/trinity/plugins/styles/scheck.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-06-17T17:40:44^e
+
+[usr]
+lib/tqt3/plugins/imageformats/libqmng.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-12T03:31:47^e
+lib/tqt3/plugins/inputmethods/libqimsw-multi.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-12T03:31:47^e
+lib/tqt3/plugins/inputmethods/libqimsw-none.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-12T03:31:47^e
+lib/tqt3/plugins/inputmethods/libqsimple.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-12T03:31:47^e
+lib/tqt3/plugins/inputmethods/libqxim.so=30500^e3^ex86_64 Linux g++-4.* full-config^e2019-08-12T03:31:47^e
+
