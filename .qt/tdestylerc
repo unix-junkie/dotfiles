@@ -5,6 +5,6 @@ MenuDropShadow=false
 MenuOpacity=0.9
 MenuTransparencyEngine=Disabled
 PopupMenuDelay=250
-ScrollablePopupMenus=false
+ScrollablePopupMenus=true
 SemiTransparentRubberband=false
 
