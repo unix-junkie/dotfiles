@@ -4,7 +4,20 @@ style "font" {
 widget_class "*" style "font"
 gtk-font-name="Arial Regular 7.7"
 gtk-theme-name="Raleigh"
+#
+# For KDE applications using GTK+ 2.0 visual style, either the primary or the
+# fall back icon theme should be either "oxygen" or "breeze" (these two are the
+# only complete KDE icon themes).
+#
+# Since GTK+ 3.0 ignores gtk-fallback-icon-theme anyway, for consistency, it's
+# better to have "oxygen" as the primary icon theme for both GTK+ 2.0 and 3.0.
+#
+# Character case matters (at least for KDE/TDE systemsettings utility).
+#
+gtk-icon-theme-name="oxygen"
+gtk-fallback-icon-theme="oxygen"
+gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-menu=16,16:gtk-button=16,16:gtk-small-toolbar=22,22:gtk-large-toolbar=32,32:gtk-dnd=16,16:gtk-dialog=16,16"
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
-gtk-menu-images=0
-gtk-button-images=0
+gtk-menu-images=1
+gtk-button-images=1
 gtk-primary-button-warps-slider=0
