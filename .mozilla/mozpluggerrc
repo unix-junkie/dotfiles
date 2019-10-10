@@ -78,8 +78,10 @@ define([OO],[swallow(VCLSalFrame) fill: ooffice2.0 -nologo -norestore -view $1 "
 	swallow(VCLSalFrame) fill: ooffice -nologo -norestore -view $1 "$file"
 	swallow(VCLSalFrame) fill: soffice -nologo $1 "$file"])
 
-### Acrobat Reader
-define(ACROREAD, [repeat swallow(acroread) fill : acroread -openInNewWindow /a "$fragment" "$file"])
+### Acrobat Reader 5.x
+define(ACROREAD, [repeat swallow(acroread) fill : acroread -useFrontEndProgram "$file"])
+### Acrobat Reader 9.x
+#define(ACROREAD, [repeat swallow(acroread) fill : acroread -openInNewWindow /a "$fragment" "$file"])
 
 ### GV
 define(GV_OPTS,[--safer --quiet --antialias -geometry +9000+9000])
@@ -283,12 +285,14 @@ application/pdf:pdf:PDF file
 application/x-pdf:pdf:PDF file
 text/pdf:pdf:PDF file
 text/x-pdf:pdf:PDF file
-	ACROREAD()
-	repeat noisy swallow(Xpdf) fill needs_xembed: xpdf -g +9000+9000 "$file"
+	repeat noisy swallow(kpdf) fill needs_xembed: kpdf "$file"
 	repeat noisy swallow(okular) fill needs_xembed: okular "$file"
-        repeat noisy swallow(epdfview) fill needs_xembed: epdfview "$file"
-	GV()
+	repeat noisy swallow(epdfview) fill needs_xembed: epdfview "$file"
 	repeat noisy swallow(evince) fill needs_xembed: evince "$file"
+	repeat noisy swallow(Xpdf) fill needs_xembed: xpdf -g +9000+9000 "$file"
+	repeat noisy swallow(kghostview) fill needs_xembed: kghostview "$file"
+	GV()
+	ACROREAD()
 
 application/x-dvi:dvi:DVI file
         repeat swallow(kdvi) fill: kdvi "$file"
