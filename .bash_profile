@@ -104,6 +104,7 @@ ${PATH}:\
 /opt/GitExtensions:\
 /opt/smartcvs/bin:\
 /opt/seamonkey:\
+/opt/acroread/bin:\
 ${ORACLE_HOME}/bin:\
 ${HOME}/bin"
 
