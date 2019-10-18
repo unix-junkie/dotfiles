@@ -111,7 +111,13 @@ ${HOME}/bin"
 # X11
 export XAPPLRESDIR="${HOME}/.app-defaults"
 ##export XUSERFILESEARCHPATH="%L/%N.ad:%N.ad:${XAPPLRESDIR}/%L/%N:${XAPPLRESDIR}/%N:/etc/X11/app-defaults/%N"
-export XUSERFILESEARCHPATH="%L/%N.ad:%N.ad:${XAPPLRESDIR}/%L/%N:${XAPPLRESDIR}/%N"
+export XUSERFILESEARCHPATH="\
+%L/%N.ad:\
+%l/%N.ad:\
+%N.ad:\
+${XAPPLRESDIR}/%L/%N:\
+${XAPPLRESDIR}/%l/%N:\
+${XAPPLRESDIR}/%N"
 
 # GTK3
 export GTK_CSD=0
