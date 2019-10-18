@@ -62,18 +62,7 @@ fi
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 if [ "$color_prompt" = yes ]; then
-	# "17" is the length of the ANSI escape sequences here
-	# (incl. the two extra '\E' chars).
-	#
-	# The bash-specific '%b' printf format allows '\E' to
-	# be expanded (the regular '\e' or '\033' would get
-	# expanded just as well with the traditional '%s'
-	# format).
-	#
-	# The asterisk ('*') specifies that the width is given
-	# as an argument before the string or the number to be
-	# printed.
-	$(type -t __git_ps1 >/dev/null) && PS1="\[\$(tput sc; printf \"%*b\" \$((COLUMNS + 17)) \"\E[32;92;40;3m\$(__git_ps1)\E[0m\"; tput rc)\]" || PS1=''
+	$(type -t __git_ps1 >/dev/null) && PS1="\[\033[32;92;40;3m\]\$(__git_ps1)\[\033[00m\]" || PS1=''
 
 	PS1="${PS1}${debian_chroot:+($debian_chroot)}\[\033[37;97;45;01m\][\u@\h \W]\$\[\033[00m\] "
 else
