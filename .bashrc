@@ -71,15 +71,6 @@ else
 	PS1="${PS1}${debian_chroot:+($debian_chroot)}[\u@\h \W]\$ "
 fi
 
-# Add the current dir to the title, optionally suffixed with the "git whoami"
-# output (in Git directories).
-if $(type -t __git_ps1 >/dev/null) && $(type -t git-whoami >/dev/null)
-then
-	PS1="${PS1}\[\e]2;\$([[ -n \"\$(__git_ps1)\" ]] && echo \"\${PWD} - \$(git whoami)\" || pwd)\a\]"
-else
-	PS1="${PS1}\[\e]2;\${PWD}\a\]"
-fi
-
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
