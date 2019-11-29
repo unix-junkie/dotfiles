@@ -10,3 +10,5 @@ fi
 alias ls='ls --color=auto'
 alias ll='ls -laF'
 alias l.='ll -d .*'
+
+export HISTEDIT="${EDITOR}"
