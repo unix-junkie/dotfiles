@@ -1,0 +1,19 @@
+!
+! Rxvt.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.background:		#fff7e9
+*.foreground:		#000000
+*.cursorColor:		#000000
+*.pointerColor:		#000000
+*.pointerColor2:	#fff7e9
+*.borderColor:		#fff7e9
+*.intensityStyles:	True
+
+*.loginShell:		True
+*.answerbackString:	rxvt
+
+*.font:			-monotype-courier new-medium-r-normal--*-120-*-*-m-*-koi8-r
+*.boldFont:		-monotype-courier new-bold-r-normal--*-120-*-*-m-*-koi8-r
