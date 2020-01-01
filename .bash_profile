@@ -130,6 +130,8 @@ export LD_PRELOAD="libgtk3-nocsd.so.0${LD_PRELOAD:+:$LD_PRELOAD}"
 export SWT_GTK3=0
 export QT_STYLE_OVERRIDE='gtk2'
 export QT_QPA_PLATFORMTHEME='gtk2'
+# Disable automatic UI scaling in Qt5 on HiDPI displays (e. g.: in vlc). We'll set screen DPI ourselves.
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 # Make DrRacket use GTK2 by default
 export PLT_GTK2=1
