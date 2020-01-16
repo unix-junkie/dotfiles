@@ -41,6 +41,10 @@ case "$(hostname -s)" in
 		fi
 		;;
 	'unit-725')
+		# We've configured the mouse manually, and the auto-detected duplicate
+		# causes mouse wheel to stop working in Qt5 applications.
+		xinput --disable 'Logitech USB Laser Mouse'
+
 		if [[ ${#monitors[*]} -eq 2 ]]
 		then
 			for monitor in ${monitors[*]}
