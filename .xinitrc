@@ -69,4 +69,4 @@ fi
 
 xscreensaver -no-splash &
 
-exec wmaker
+exec x-window-manager || exec wmaker || exec mwm || exec twm
