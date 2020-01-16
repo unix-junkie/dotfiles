@@ -63,3 +63,7 @@ XTerm.*.Scrollbar.background:	#c4c2bd
 *.vt100.titleModes:		2
 *.vt100.vt100Graphics:		True
 *.vt100.wideChars:		True
+
+*VT100*translations:    #override \n\
+	Ctrl <KeyPress> Insert: copy-selection(CLIPBOARD) \n\
+	Shift <KeyPress> Insert: insert-selection(CLIPBOARD)
