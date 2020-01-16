@@ -67,6 +67,11 @@ Xft.dpi: ${dpi}
 EOF
 fi
 
+if [[ -x "$(which xbindkeys)" ]]
+then
+	xbindkeys
+fi
+
 xscreensaver -no-splash &
 
 exec x-window-manager || exec wmaker || exec mwm || exec twm
