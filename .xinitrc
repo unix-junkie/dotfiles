@@ -15,7 +15,6 @@ done
 
 case "$(hostname -s)" in
 	'proxima')
-
 		if [[ ${#monitors[*]} -eq 1 && "${monitors[0]}" = 'eDP1' ]]
 		then
 			dpi=142
@@ -34,6 +33,21 @@ case "$(hostname -s)" in
 						dpi=162
 						xrandr --output "${monitor}" --primary
 						xrandr --output "${monitor}" --set "Broadcast RGB" "Full"
+						;;
+					*)
+						;;
+				esac
+			done
+		fi
+		;;
+	'unit-725')
+		if [[ ${#monitors[*]} -eq 2 ]]
+		then
+			for monitor in ${monitors[*]}
+			do
+				case "${monitor}" in
+					'HDMI1')
+						xrandr --output "${monitor}" --primary
 						;;
 					*)
 						;;
