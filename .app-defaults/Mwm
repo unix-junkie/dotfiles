@@ -1,0 +1,7 @@
+!
+! Mwm.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.moveOpaque: True
