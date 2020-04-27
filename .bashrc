@@ -150,14 +150,14 @@ then
 	. /etc/alliance.env
 fi
 
-chrome_flags='--disable-remote-fonts'
+##chrome_flags+=' --disable-remote-fonts'
 ##chrome_flags+=' --proxy-server=http://localhost:3128'
 chrome_flags+=' --high-dpi-support=1'
 chrome_flags+=' --force-device-scale-factor=1'
 
 for browser in 'chromium' 'google-chrome' 'gooogle-chrome-stable' 'iridium-browser' 'opera' 'vivaldi' 'vivaldi-stable'
 do
-	alias ${browser}="${browser} ${chrome_flags}"
+	alias ${browser}="${browser}${chrome_flags}"
 done
 
 unset chrome_flags
