@@ -1,0 +1,38 @@
+inode/directory; thunar %s; test=test -n "${DISPLAY}"
+text/plain; gvim %s; test=test -n "${DISPLAY}"
+text/plain; vim %s; needsterminal
+text/html; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+text/html; elinks %s;
+text/xml; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+application/xml; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/feed; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/ftp; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/gopher; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/http; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/https; seamonkey -remote 'openURL(%s,new-tab)'; test=test -n "${DISPLAY}"
+x-scheme-handler/irc; seamonkey -chat %s; test=test -n "${DISPLAY}"
+x-scheme-handler/mailto; seamonkey -mail %s; test=test -n "${DISPLAY}"
+x-scheme-handler/news; seamonkey -news %s; test=test -n "${DISPLAY}"
+x-scheme-handler/nntp; seamonkey -news %s; test=test -n "${DISPLAY}"
+x-scheme-handler/snews; seamonkey -news %s; test=test -n "${DISPLAY}"
+image/*; display '%s'; test=test -n "${DISPLAY}"; edit=gimp '%s'
+image/*; convert '%s' xpm:- | vim -c 'set syntax=xpm' -; needsterminal;
+image/*; identify -verbose '%s'; copiousoutput;
+application/rar; xarchiver %s; test=test -n "${DISPLAY}"
+application/vnd.oasis.opendocument.text; lowriter '%s'; description="OpenDocument Text"; nametemplate=%s.odt; test=test -n "${DISPLAY}"
+# "copiousoutput" results in the odt2txt output piped via the default
+# text/plain handler. This works for vim and doesn't for gvim (the workaround is to set "needsterminal").
+application/vnd.oasis.opendocument.text; odt2txt '%s'; copiousoutput; description="OpenDocument Text"; nametemplate=%s.odt
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; lowriter '%s'; description="Office Open XML Document"; nametemplate=%s.docx; test=test -n "${DISPLAY}"
+application/pdf; /opt/trinity/bin/kpdf '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/kpdf ]; description="Portable Document Format"
+application/pdf; /opt/trinity/bin/konqueror '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/konqueror ] && expr `gs --version` ">=" 3.51 >/dev/null 2>&1; description="Portable Document Format"
+application/pdf; xpdf '%s' 2>/dev/null; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" ]; description="Portable Document Format"
+application/pdf; /opt/trinity/bin/kghostview '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/kghostview ]; description="Portable Document Format"
+application/pdf; gv '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" ]; description="Portable Document Format"
+application/pdf; pstotext '%s'; nametemplate=%s.pdf; test=[ -z "${LYNX_VERSION}" ] && expr `gs --version` ">=" 3.51 >/dev/null 2>&1; copiousoutput; description="Portable Document Format"
+application/pdf; pstotext '%s'; nametemplate=%s.pdf; test=[ -n "${LYNX_VERSION}" ] && expr `gs --version` ">=" 3.51 >/dev/null 2>&1; description="Portable Document Format"
+# .class
+application/java-vm; file -b '%s'\; javap -private '%s' 2>/dev/null; copiousoutput; needsterminal;
+
+text/x-java; gvim '%s'; nametemplate=%s.java; test=[ -n "${DISPLAY}" ];
+text/x-java; vim '%s'; nametemplate=%s.java; needsterminal;
