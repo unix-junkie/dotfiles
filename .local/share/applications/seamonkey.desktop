@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=SeaMonkey
+GenericName=Internet Suite
+Comment=Web Browser, Email/News Client, HTML Editor, IRC Client
+Exec=seamonkey %u
+Icon=/opt/seamonkey/chrome/icons/default/default.png
+Terminal=false
+X-MultipleArgs=false
+StartupWMClass=SeaMonkey
+Type=Application
+Categories=Network;WebBrowser;Email;WebDevelopment;IRCClient;
+MimeType=application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;image/gif;image/jpeg;image/png;text/html;text/xml;video/webm;x-scheme-handler/chrome;x-sch
+NoDisplay=false
