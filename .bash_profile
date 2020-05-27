@@ -144,6 +144,9 @@ then
 	export $(dbus-launch)
 fi
 
+# gvfsd
+export GVFS_DISABLE_FUSE=1
+
 # Fix PuTTY line drawing in UTF-8 mode.
 if [ "$(locale charmap)" = 'UTF-8' ] && [[ "${TERM}" =~ ^xterm.*$ ]]
 then
