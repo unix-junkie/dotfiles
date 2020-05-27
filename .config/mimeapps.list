@@ -4,6 +4,7 @@ application/pdf=run-mailcap.desktop
 application/postscript=run-mailcap.desktop
 application/rar=run-mailcap.desktop
 application/rss+xml=run-mailcap.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=run-mailcap.desktop
 application/x-cue=run-mailcap.desktop
 application/x-extension-eml=run-mailcap.desktop
 application/x-extension-htm=run-mailcap.desktop
@@ -48,3 +49,11 @@ x-scheme-handler/mailto=seamonkey.desktop
 x-scheme-handler/news=seamonkey.desktop
 x-scheme-handler/nntp=seamonkey.desktop
 x-scheme-handler/snews=seamonkey.desktop
+
+[Removed Associations]
+application/x-java-jnlp-file=icedtea-netx-javaws.desktop;
+
+[Added Associations]
+application/x-java-jnlp-file=run-mailcap.desktop;
+text/x-csrc=gvim.desktop;vim.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;sublime_text.desktop;nedit.desktop;juffed.desktop;efte.desktop;yudit.desktop;emacs25-term.desktop;
+text/x-patch=gvim.desktop;
