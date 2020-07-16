@@ -18,7 +18,11 @@ case "$(uname -s)" in
 		#
 		# See also https://bugs.freedesktop.org/show_bug.cgi?id=3078
 		#
+		# -deferglyphs option is recommended for use with xfstt:
+		# it specifies the types of fonts for which the server should
+		# attempt to use deferred glyph loading. The argument can be
+		# all (all fonts), none (no fonts), or 16 (16 bit fonts only).
 		##exec X -dpi 96 "$@"
-		exec X -listen tcp -auth "${HOME}/.Xauthority"
+		exec X -listen tcp -deferglyphs 16 -auth "${HOME}/.Xauthority"
 		;;
 esac
