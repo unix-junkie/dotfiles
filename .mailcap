@@ -18,6 +18,7 @@ x-scheme-handler/snews; seamonkey -news %s; test=test -n "${DISPLAY}"
 image/*; display '%s'; test=test -n "${DISPLAY}"; edit=gimp '%s'
 image/*; convert '%s' xpm:- | vim -c 'set syntax=xpm' -; needsterminal;
 image/*; identify -verbose '%s'; copiousoutput;
+video/*; mplayer '%s'
 application/rar; xarchiver %s; test=test -n "${DISPLAY}"
 application/vnd.oasis.opendocument.text; lowriter '%s'; description="OpenDocument Text"; nametemplate=%s.odt; test=test -n "${DISPLAY}"
 # "copiousoutput" results in the odt2txt output piped via the default
