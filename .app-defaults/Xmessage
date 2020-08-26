@@ -1,0 +1,21 @@
+!
+! XTerm.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.baseTranslations: 		#override :<Key>Return: default-exit()
+*.center:			True
+*.buttons:			OK
+
+*.background:			#dcdad5
+
+*.message.*.foreground:		black
+*.message.*.background:		white
+*.message.scrollVertical:	Always
+*.message.scrollHorizontal:	Never
+*.message.international:	True
+
+*.Command.shapeStyle:		rectangle
+*.Command.highlightThickness:	1
+*.Command.international:	True

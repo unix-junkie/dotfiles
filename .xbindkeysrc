@@ -54,6 +54,9 @@
 "emacs"
   control + mod4 + e
 
+"xscreensaver-command -lock 2>&1 | xmessage -center -timeout 5 -file -"
+  mod4 + l
+
 # set directly keycode (here control + f with my keyboard)
 #"xterm"
 #  c:41 + m:0x4
