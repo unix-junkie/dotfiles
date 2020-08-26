@@ -15,7 +15,9 @@
 *.message.scrollVertical:	Always
 *.message.scrollHorizontal:	Never
 *.message.international:	True
+*.message.*.fontSet:		-*-courier-medium-r-normal-*-*-120-100-100-m-*-iso10646-1
 
 *.Command.shapeStyle:		rectangle
 *.Command.highlightThickness:	1
 *.Command.international:	True
+*.Command.fontSet:		-*-helvetica-medium-r-normal-*-*-120-100-100-p-*-iso10646-1
