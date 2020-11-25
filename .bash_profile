@@ -124,7 +124,10 @@ export GTK_CSD=0
 export GTK_DISABLE_CSD=1
 export GTK_THEME='Raleigh-Reloaded'
 export GTK_OVERLAY_SCROLLING=0
-export LD_PRELOAD="libgtk3-nocsd.so.0${LD_PRELOAD:+:$LD_PRELOAD}"
+if [[ -f /usr/lib/i386-linux-gnu/libgtk3-nocsd.so.0 || -f /usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0 ]]
+then
+	export LD_PRELOAD="libgtk3-nocsd.so.0${LD_PRELOAD:+:$LD_PRELOAD}"
+fi
 
 # Make Eclipse use GTK2 by default
 export SWT_GTK3=0
@@ -139,7 +142,7 @@ export PLT_GTK2=1
 ulimit -c unlimited
 
 # D-Bus
-if [ -z "${DBUS_SESSION_BUS_ADDRESS}" ]
+if [[ -z "${DBUS_SESSION_BUS_ADDRESS}" && -x "$(which dbus-launch)" ]]
 then
 	export $(dbus-launch)
 fi
