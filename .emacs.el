@@ -116,7 +116,6 @@
 (global-set-key (kbd "TAB") 'self-insert-command)
 (global-set-key [mouse-4] 'scroll-down)
 (global-set-key [mouse-5] 'scroll-up)
-(set-scroll-bar-mode 'right)
 (autoload 'vm "vm" "Start VM on your primary inbox." t)
 (autoload 'vm-other-frame "vm" "Like `vm' but starts in another frame." t)
 (autoload 'vm-visit-folder "vm" "Start VM on an arbitrary folder." t)
