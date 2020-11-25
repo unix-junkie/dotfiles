@@ -34,6 +34,12 @@ case "$(hostname -s)" in
 						xrandr --output "${monitor}" --primary
 						xrandr --output "${monitor}" --set "Broadcast RGB" "Full"
 						;;
+					'DP1')
+						# Intel videocard, 2k DP display.
+						dpi=91
+						xrandr --output "${monitor}" --primary
+						xrandr --output "${monitor}" --set "Broadcast RGB" "Full"
+						;;
 					*)
 						;;
 				esac
