@@ -86,7 +86,7 @@
 			;;	"-monotype-courier new-medium-r-normal--*-120-*-*-m-0-iso10646-1"))
 			;; Xft:
 			(set-default-font
-				"Courier New:size=13"))
+				"Courier New:size=27:antialias=false"))
 		;; else (not gnu/linux)
 		(when (eq system-type 'windows-nt)
 			(progn
