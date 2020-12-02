@@ -1,0 +1,34 @@
+!
+! Emacs.ad
+!
+! vim:ft=xdefaults:
+!
+
+! X toolkit, Xaw3d scrollbars:
+! XlwMenu
+Emacs*XlwMenu.shadowThickness:					1
+Emacs*XlwMenu.resourceLabels:					True
+Emacs*XlwMenu.foreground:					Black
+Emacs*XlwMenu.background:					#dcdad5
+
+! Emacs compiled with Xft:
+Emacs*XlwMenu.font:						xft:family=Arial:size=7.7:antialias=false
+
+! Specifying Emacs.Font breaks XEmacs
+
+! Editor font (may be overwrittein by ~/.emacs)
+! Emacs w/Xft:
+emacs.Font:							Courier New-12
+
+Emacs.header-line.attributeForeground:				Black
+Emacs.header-line.attributeBackground:				#dcdad5
+Emacs.mode-line.attributeForeground:				Black
+Emacs.mode-line.attributeBackground:				#dcdad5
+Emacs.region.attributeForeground:				White
+Emacs.region.attributeBackground:				#4b6983
+Emacs.fringe.attributeBackground:				#dcdad5
+Emacs.scroll-bar.attributeBackground:				#dcdad5
+Emacs.tool-bar.attributeBackground:				#dcdad5
+! Specifying Emacs.Background breaks XEmacs
+emacs.Background:						#fff7e9
+Emacs.BitmapIcon:						True

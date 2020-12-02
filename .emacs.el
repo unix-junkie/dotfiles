@@ -85,8 +85,13 @@
 			;;(set-default-font
 			;;	"-monotype-courier new-medium-r-normal--*-120-*-*-m-0-iso10646-1"))
 			;; Xft:
-			(set-default-font
-				"Courier New:size=27:antialias=false"))
+			(progn
+				;; 1st frame
+				(set-default-font "Courier New-12")
+				;; New frames
+				(set-face-attribute
+					'default nil
+					:font "Courier New-12")))
 		;; else (not gnu/linux)
 		(when (eq system-type 'windows-nt)
 			(progn
