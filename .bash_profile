@@ -98,6 +98,7 @@ ${PATH}:\
 /usr/sbin:\
 /opt/trinity/bin:\
 /opt/trinity/sbin:\
+/opt/trinity/games:\
 /opt/p4v/bin:\
 /opt/eclipse:\
 /opt/idea/bin:\
