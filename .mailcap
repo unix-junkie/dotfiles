@@ -38,6 +38,10 @@ application/x-bittorrent; deluge-gtk %s; nametemplate=%s.torrent; test=[ -n "${D
 application/x-bittorrent; qbittorrent %s; nametemplate=%s.torrent; test=[ -n "${DISPLAY}" ]; description="BitTorrent file"
 # .class
 application/java-vm; file -b '%s'\; javap -private '%s' 2>/dev/null; copiousoutput; needsterminal;
+# .ttf
+# If Midnight Commander's viewer is to be used in conjunction with run-mailcap, "needsterminal" should be off (otherwise, a separate terminal will be spawned).
+# That said, "copiousoutput" (the View action) and "needsterminal" should never be used together.
+application/font-sfnt; otfinfo -i '%s'; copiousoutput; description="TrueType Font";
 
 text/x-java; gvim '%s'; nametemplate=%s.java; test=[ -n "${DISPLAY}" ];
 text/x-java; vim '%s'; nametemplate=%s.java; needsterminal;
