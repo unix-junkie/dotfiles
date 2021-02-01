@@ -5,6 +5,7 @@ application/postscript=run-mailcap.desktop
 application/rar=run-mailcap.desktop
 application/rss+xml=run-mailcap.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=run-mailcap.desktop
+application/x-bittorrent=run-mailcap.desktop
 application/x-cue=run-mailcap.desktop
 application/x-extension-eml=run-mailcap.desktop
 application/x-extension-htm=run-mailcap.desktop
