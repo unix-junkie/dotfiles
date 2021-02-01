@@ -58,3 +58,6 @@ application/x-java-jnlp-file=icedtea-netx-javaws.desktop;
 application/x-java-jnlp-file=run-mailcap.desktop;
 text/x-csrc=gvim.desktop;vim.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;sublime_text.desktop;nedit.desktop;juffed.desktop;efte.desktop;yudit.desktop;emacs25-term.desktop;
 text/x-patch=gvim.desktop;
+text/x-log=gvim.desktop;run-mailcap.desktop;
+application/zip=run-mailcap.desktop;
+application/x-ms-dos-executable=run-mailcap.desktop;
