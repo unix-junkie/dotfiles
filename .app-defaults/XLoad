@@ -1,0 +1,24 @@
+!
+! vim:ft=xdefaults:
+!
+
+XLoad.input:			True
+*Label*Justify:			Left
+*Label.font:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1
+*Label.fontSet:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*, \
+				-monotype-arial-regular-r-normal--*-77-162-162-p-*-*-*
+*internalBorderWidth:		1
+*showGrip:			True
+
+*Grip.borderWidth: 1
+*Grip.foreground: #dcdad5
+*Grip.borderColor: #8c8982
+! See <https://www.x.org/releases/X11R7.7/doc/libXaw/libXaw.html#StripChart::Resources>
+*JumpScroll:			1
+*update: 1
+XLoad.paned.label.foreground: #000000
+XLoad.paned.label.background: #dcdad5
+XLoad.paned.label.international: True
+XLoad.paned.load.foreground: #4b6983
+XLoad.paned.load.background: #ffffff
+XLoad.paned.load.highlight: #0000ff

@@ -1,0 +1,18 @@
+!
+! vim:ft=xdefaults:
+!
+
+*background:		#dcdad5
+! Mgdiff doesn't support multi-byte encodings for the files being compared,
+! so any source should be converted to a single-byte encoding beforehands.
+Mgdiff.font:		-monotype-courier new-medium-r-normal--*-100-162-162-m-*-koi8-r
+Mgdiff*fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1
+Mgdiff.sameBackground:   #fff7e9
+! Removed lines
+Mgdiff.blankBackground:  #ffc0c0
+Mgdiff.insertBackground:  #c0ffc0
+Mgdiff.diffBackground:  #c0c0ff
+! XmText
+Mgdiff*manualpage_popup.manualpage*help_text.background: #ffffff
+Mgdiff*manualpage_popup.manualpage*help_text.foreground: #4b6983
+Mgdiff*manualpage_popup.manualpage*help_text.fontList: -monotype-courier new-medium-r-normal--*-100-162-162-m-*-iso10646-1

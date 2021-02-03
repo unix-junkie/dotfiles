@@ -1,0 +1,27 @@
+!
+! vim:ft=xdefaults:
+!
+
+Editres.paned.box.background:			#dcdad5
+Editres.paned.box.MenuButton.foreground:	#000000
+Editres.paned.box.MenuButton*foreground:	#4b6983
+Editres.paned.box.MenuButton*background:	#dcdad5
+Editres.paned.hPane.panner.foreground:		#dcdad5
+Editres.paned.hPane.panner.background:		#c4c2bd
+Editres.paned.hPane.xt.background:		#dcdad5
+
+! Before any tree is available
+Editres.paned.porthole.background:		#dcdad5
+! Once a tree is available
+Editres.paned.porthole.tree.background:		#ffffff
+
+! Resource box (separate window)
+Editres.paned.porthole.tree*xt.pane.mainViewport.pane.resourceLabel.foreground:		#000000
+Editres.paned.porthole.tree*xt.pane.mainViewport.pane.namesLabel.foreground:		#000000
+Editres.paned.porthole.tree*xt.pane.commandBox.Command.foreground:		#000000
+Editres.paned.porthole.tree*xt.pane.valueForm.valueLabel.foreground:		#000000
+Editres.paned.porthole.tree*xt.pane.valueForm.valueText*foreground:		#000000
+Editres.paned.porthole.tree*xt.pane.valueForm.valueText.background:		#ffffff
+
+Editres.paned.porthole.tree*foreground:		#4b6983
+Editres.paned.porthole.tree*background:		#dcdad5

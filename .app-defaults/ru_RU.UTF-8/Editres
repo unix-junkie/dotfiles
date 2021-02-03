@@ -1,0 +1,7 @@
+!
+! vim:ft=xdefaults:
+!
+
+#include "../Editres"
+
+Editres*Font: -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1

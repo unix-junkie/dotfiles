@@ -1,0 +1,17 @@
+!
+! XFontSel.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.background: #dcdad5
+*.foreground: Black
+*.menu*font: -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso8859-1
+*.menu.background: White
+*.menu.options.showUnselectable: False
+*.pane.commandBox*font: -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso8859-1
+*.pane.fieldBox*font: -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso8859-1
+*.pane.fontName*font: -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso8859-1
+*.pane.viewPort*background: White
+*.printOnQuit: True
+*.scaledFonts: False
