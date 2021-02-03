@@ -15,8 +15,8 @@
 *.loginShell:		True
 *.answerbackString:	rxvt-unicode
 
-!*.font:		-monotype-courier new-medium-r-normal--*-120-*-*-m-*-iso10646-1
-!*.boldFont:		-monotype-courier new-bold-r-normal--*-120-*-*-m-*-iso10646-1
-!*.italicFont:		-monotype-courier new-medium-i-normal--*-120-*-*-m-*-iso10646-1
-!*.boldItalicFont:	-monotype-courier new-bold-i-normal--*-120-*-*-m-*-iso10646-1
+!*.font:		-monotype-courier new-medium-r-normal--*-120-162-162-m-*-iso10646-1
+!*.boldFont:		-monotype-courier new-bold-r-normal--*-120-162-162-m-*-iso10646-1
+!*.italicFont:		-monotype-courier new-medium-i-normal--*-120-162-162-m-*-iso10646-1
+!*.boldItalicFont:	-monotype-courier new-bold-i-normal--*-120-162-162-m-*-iso10646-1
 *.font:			xft:Courier New:size=12:antialias=false

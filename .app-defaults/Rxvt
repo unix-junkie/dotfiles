@@ -15,5 +15,5 @@
 *.loginShell:		True
 *.answerbackString:	rxvt
 
-*.font:			-monotype-courier new-medium-r-normal--*-120-*-*-m-*-koi8-r
-*.boldFont:		-monotype-courier new-bold-r-normal--*-120-*-*-m-*-koi8-r
+*.font:			-monotype-courier new-medium-r-normal--*-120-162-162-m-*-koi8-r
+*.boldFont:		-monotype-courier new-bold-r-normal--*-120-162-162-m-*-koi8-r
