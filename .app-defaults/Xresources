@@ -3,3 +3,8 @@
 !
 
 Xcursor.theme: core
+
+Xft.autohint: 0
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
