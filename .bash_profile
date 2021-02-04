@@ -120,6 +120,10 @@ ${XAPPLRESDIR}/%L/%N:\
 ${XAPPLRESDIR}/%l/%N:\
 ${XAPPLRESDIR}/%N"
 
+# In order for server-side vector fonts to look good
+# when rasterized using newer (2.7+) FreeType versions.
+export FREETYPE_PROPERTIES=truetype:interpreter-version=35
+
 # GTK3
 export GTK_CSD=0
 export GTK_DISABLE_CSD=1
