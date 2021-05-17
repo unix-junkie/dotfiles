@@ -59,6 +59,7 @@ export JRE_HOME="${JAVA_HOME}/jre"
 #export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.motif.MotifLookAndFeel'
 export _JAVA_OPTIONS='-Dswing.defaultlaf=javax.swing.plaf.metal.MetalLookAndFeel -Dswing.metalTheme=steel -Dswing.noxp=true -Dswing.aatext=false -Dswing.plaf.metal.controlFont="Arial-BOLD-12" -Dswing.plaf.metal.userFont="Arial--12" -Dswing.plaf.metal.systemFont="Arial--11" -Dswing.plaf.metal.smallFont="Arial--10"'
 export _JAVA_OPTIONS="${_JAVA_OPTIONS} -Djdk.gtk.version=2"
+export _JAVA_OPTIONS="${_JAVA_OPTIONS} -Dsun.java2d.uiScale=1"
 export MAVEN_OPTS='-DdownloadSources=true -DdownloadJavadocs=true'
 
 if [ -d "${HOME}/.sdkman" ]
@@ -140,6 +141,8 @@ export QT_STYLE_OVERRIDE='gtk2'
 export QT_QPA_PLATFORMTHEME='gtk2'
 # Disable automatic UI scaling in Qt5 on HiDPI displays (e. g.: in vlc). We'll set screen DPI ourselves.
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
+# The same for GTK+:
+export GDK_SCALE=1
 
 # Make DrRacket use GTK2 by default
 export PLT_GTK2=1
