@@ -143,6 +143,7 @@ export QT_QPA_PLATFORMTHEME='gtk2'
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 # The same for GTK+:
 export GDK_SCALE=1
+export GDK_DPI_SCALE=1
 
 # Make DrRacket use GTK2 by default
 export PLT_GTK2=1
