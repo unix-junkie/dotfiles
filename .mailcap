@@ -26,7 +26,6 @@ application/vnd.oasis.opendocument.text; lowriter '%s'; description="OpenDocumen
 application/vnd.oasis.opendocument.text; odt2txt '%s'; copiousoutput; description="OpenDocument Text"; nametemplate=%s.odt
 application/vnd.openxmlformats-officedocument.wordprocessingml.document; lowriter '%s'; description="Office Open XML Document"; nametemplate=%s.docx; test=test -n "${DISPLAY}"
 application/pdf; /opt/trinity/bin/kpdf '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/kpdf ]; description="Portable Document Format"
-application/pdf; /opt/trinity/bin/konqueror '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/konqueror ] && expr `gs --version` ">=" 3.51 >/dev/null 2>&1; description="Portable Document Format"
 application/pdf; okular '%s' 2>/dev/null; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /usr/bin/okular ]; description="Portable Document Format"
 application/pdf; xpdf -q '%s' 2>/dev/null; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /usr/bin/xpdf ]; description="Portable Document Format"
 application/pdf; /opt/trinity/bin/kghostview '%s'; nametemplate=%s.pdf; test=[ -n "${DISPLAY}" -a -x /opt/trinity/bin/kghostview ]; description="Portable Document Format"
