@@ -1,0 +1,56 @@
+!
+! Vim.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.background:				#dcdad5
+
+*.XmTextField.background:		#ffffff
+*.XmTextField.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+*.XmList.background:			#ffffff
+*.XmList.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+*.XmText.background:			#ffffff
+*.XmText.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+*.XmCascadeButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmCascadeButtonGadget.fontList:	-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmLabel.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmLabelGadget.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmPushButtonGadget.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+! Localized Resources
+! (see https://docs.oracle.com/cd/E19620-01/805-3916/6j3nhc7op/index.html)
+*.XmFileSelectionBox.dirListLabelString: Каталоги (D)
+*.XmFileSelectionBox.fileListLabelString: Файлы
+*.XmFileSelectionBox.filterLabelString: Тип файлов (l)
+*.XmFileSelectionBox.noMatchString: [Нет файлов выбранного типа]
+
+*.XmMessageBox.cancelLabelString: Отмена
+*.XmMessageBox.helpLabelString: Справка
+*.XmMessageBox.okLabelString: OK
+
+*.XmSelectionBox.applyLabelString: Применить
+*.XmSelectionBox.cancelLabelString: Отмена
+*.XmSelectionBox.helpLabelString: Справка
+*.XmSelectionBox.listLabelString: D (List)
+*.XmSelectionBox.okLabelString: OK
+*.XmSelectionBox.selectionLabelString: E (Selection)
+
+! These also work
+! (see https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/motif/motifug/motifug71.htm):
+!
+! Single font:
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1
+!
+! Font list:
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1=TAG
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1=TAG1, -monotype-arial-medium-r-normal--*-77-162-162-p-*-iso10646-1=TAG2
+!
+! Font set:
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:TAG
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*; -monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+!!*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*; -monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:TAG
