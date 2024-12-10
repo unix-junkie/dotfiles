@@ -1,0 +1,66 @@
+!
+! Vim.ad
+!
+! vim:ft=xdefaults:
+!
+
+*.background:					#dcdad5
+
+*.XmTextField.background:			#ffffff
+*.XmTextField.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmTextField.shadowThickness:			1
+
+*.XmList.background:				#ffffff
+*.XmList.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmList.shadowThickness:			1
+
+*.XmText.background:				#ffffff
+*.XmText.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+*.XmCascadeButton.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmCascadeButton.shadowThickness:		1
+*.XmCascadeButtonGadget.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmCascadeButtonGadget.shadowThickness:	1
+*.XmLabel.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmLabelGadget.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmPushButton.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmPushButton.shadowThickness:			1
+*.XmPushButtonGadget.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmPushButtonGadget.shadowThickness:		1
+
+*.enableEtchedInMenu:				True
+*.scrollBackground:				#002b36
+*.scrollForeground:				#073642
+*.menuFontSet:					-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.tooltipFont:					-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+
+! Drop-down menu (incl. separators and tear-off handles)
+*.menuBar.*.background:				#002b36
+! Drop down menu item
+*.menuBar.*.XmCascadeButton.foreground:		#93a1a1
+*.menuBar.*.XmCascadeButton.background:		#002b36
+*.menuBar.*.XmPushButton.foreground:		#93a1a1
+*.menuBar.*.XmPushButton.background:		#002b36
+! Horizontal menu bar
+*.menuBar.shadowThickness:			0
+*.menuBar.background:				#073642
+*.menuBar.XmCascadeButton.foreground:		#93a1a1
+*.menuBar.XmCascadeButton.background:		#073642
+*.menuBar.XmCascadeButton.shadowThickness:	1
+
+! Toolbar (the brighter of the two Background Tones, Base02)
+*.toolBar.background:				#073642
+
+! Tab bar
+*.XmNotebook.XmPushButton.background:		#002b36
+*.XmNotebook.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+! The brightest of the Content Tones (Base1)
+*.XmNotebook.XmPushButton.foreground:		#93a1a1
+*.XmNotebook.background:			#073642
+! The border around the tab bar
+*.XmNotebook.borderColor:			#073642
+*.XmNotebook.borderWidth:			0
+! The color of the frame around the selected tab. Accent 4 (Magenta).
+*.XmNotebook.frameBackground:			#d33682
+! The "shadow" around the selected tab
+*.XmNotebook.frameShadowThickness:		1

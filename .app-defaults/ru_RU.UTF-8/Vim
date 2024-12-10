@@ -4,23 +4,7 @@
 ! vim:ft=xdefaults:
 !
 
-*.background:				#dcdad5
-
-*.XmTextField.background:		#ffffff
-*.XmTextField.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-
-*.XmList.background:			#ffffff
-*.XmList.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-
-*.XmText.background:			#ffffff
-*.XmText.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-
-*.XmCascadeButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-*.XmCascadeButtonGadget.fontList:	-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-*.XmLabel.fontList:			-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-*.XmLabelGadget.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-*.XmPushButton.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
-*.XmPushButtonGadget.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+#include "../Vim"
 
 ! Localized Resources
 ! (see https://docs.oracle.com/cd/E19620-01/805-3916/6j3nhc7op/index.html)
