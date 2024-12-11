@@ -36,11 +36,16 @@
 
 ! Drop-down menu (incl. separators and tear-off handles)
 *.menuBar.*.background:				#002b36
+*.menuBar.*.shadowThickness:			1
+*.menuBar.*.XmRowColumn.background:		#002b36
+*.menuBar.*.XmRowColumn.shadowThickness:	1
 ! Drop down menu item
 *.menuBar.*.XmCascadeButton.foreground:		#93a1a1
 *.menuBar.*.XmCascadeButton.background:		#002b36
+*.menuBar.*.XmCascadeButton.shadowThickness:	1
 *.menuBar.*.XmPushButton.foreground:		#93a1a1
 *.menuBar.*.XmPushButton.background:		#002b36
+*.menuBar.*.XmPushButton.shadowThickness:	1
 ! Horizontal menu bar
 *.menuBar.shadowThickness:			0
 *.menuBar.background:				#073642
