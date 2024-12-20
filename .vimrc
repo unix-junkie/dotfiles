@@ -183,6 +183,7 @@ set nowrap
 set number
 set ruler
 set showcmd
+set undodir=~/.local/share/vim/undo
 set visualbell
 
 " Vundle BEGIN
@@ -261,6 +262,6 @@ if has("python3") && filereadable(expand("~/.vimrc.py"))
 	py3file ~/.vimrc.py
 endif
 
-if has("lua") && filereadable(expand("~/.config/nvim/init.lua"))
-	luafile ~/.config/nvim/init.lua
+if has("lua") && filereadable(expand("~/.vimrc.lua"))
+	luafile ~/.vimrc.lua
 endif
