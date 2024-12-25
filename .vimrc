@@ -31,6 +31,18 @@ if has("gui_running")
 	elseif has("x11")
 		let os = substitute(system('uname -s'), "\n", "", "")
 		if os == "Linux"
+			" Setting `guifontset` instead of `guifont`
+			" will most probably trigger errors like
+			" "Missing charsets in String to FontSet conversion".
+			"
+			" In this case, a custom `XLOCALEDIR` with a
+			" modified `XLC_LOCALE` file may be necessary
+			" (see <https://superuser.com/questions/1531413>).
+			"
+			" The resulting font set will also override
+			" `*.XmFileSelectionBox.XmScrolledWindow.XmList.fontList`
+			" set in X resources as well as font sets of some
+			" other widgets.
 			set guifont=-monotype-courier\ new-medium-r-normal--*-120-162-162-m-*-iso10646-1
 		elseif os == "Darwin"
 			set guifont=-ibm-courier-medium-r-normal--*-*-*-*-m-*-iso10646-1

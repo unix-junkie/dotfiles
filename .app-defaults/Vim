@@ -14,6 +14,11 @@
 *.XmList.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
 *.XmList.shadowThickness:			1
 
+! File and directory lists of an `XmFileSelectionBox`.
+*.XmFileSelectionBox.XmScrolledWindow.XmList.background:	#ffffff
+*.XmFileSelectionBox.XmScrolledWindow.XmList.fontList:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
+*.XmFileSelectionBox.XmScrolledWindow.XmList.shadowThickness:	1
+
 *.XmText.background:				#ffffff
 *.XmText.fontList:				-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*:
 
