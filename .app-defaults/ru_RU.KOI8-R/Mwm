@@ -1,0 +1,18 @@
+!
+! Mwm.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "../Mwm"
+
+Mwm*activeBackground: #b24d7a
+Mwm*background: #aeb2c3
+Mwm*fontList: -monotype-arial-medium-r-*--*-*-*-*-*-0-koi8-r
+Mwm*icon*fontList: -monotype-arial-medium-r-*--*-*-*-*-*-0-koi8-r
+Mwm*iconPlacement: top left tight
+Mwm*menu*background: #aeb2c3
+Mwm*moveOpaque: True
+Mwm*multiScreen: True
+Mwm*title*fontList: -monotype-arial-bold-r-normal--*-*-*-*-p-0-koi8-r
+Mwm*useIconBox: False
