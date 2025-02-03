@@ -1,0 +1,34 @@
+!
+! RenderTables.ad
+!
+! vim:ft=xdefaults:
+!
+
+! If `fontType` is set to `FONT_IS_FONTSET`, the trailing colon is accepted but no longer necessary
+*.renderTable.Arial.fontName:		-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*
+*.renderTable.Arial.fontType:		FONT_IS_FONTSET
+
+*.renderTable.ArialBoldItalic.fontName:	-monotype-arial-bold-i-normal--*-77-162-162-p-*-*-*
+*.renderTable.ArialBoldItalic.fontType:	FONT_IS_FONTSET
+
+*.renderTable.Tahoma.fontName:		-microsoft-tahoma-medium-r-normal--*-77-162-162-p-*-*-*
+*.renderTable.Tahoma.fontType:		FONT_IS_FONTSET
+
+*.renderTable.TahomaBold.fontName:	-microsoft-tahoma-bold-r-normal--*-77-162-162-p-*-*-*
+*.renderTable.TahomaBold.fontType:	FONT_IS_FONTSET
+
+*.renderTable.ArialXft.fontName:	Arial
+*.renderTable.ArialXft.fontSize:	9
+*.renderTable.ArialXft.fontType:	FONT_IS_XFT
+
+*.renderTable.TahomaXft.fontName:	Tahoma
+*.renderTable.TahomaXft.fontSize:	9
+*.renderTable.TahomeXft.fontType:	FONT_IS_XFT
+
+*.renderTable.Liberation_Sans.fontName:	Liberation Sans
+*.renderTable.Liberation_Sans.fontSize:	9
+*.renderTable.Liberation_Sans.fontType:	FONT_IS_XFT
+
+*.renderTable.Segoe_UI.fontName:	Segoe UI
+*.renderTable.Segoe_UI.fontSize:	9
+*.renderTable.Segoe_UI.fontType:	FONT_IS_XFT

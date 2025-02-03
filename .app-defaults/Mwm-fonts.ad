@@ -1,0 +1,39 @@
+!
+! Mwm-fonts.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "RenderTables.ad"
+
+! XmFontList (see AppearanceData in WmGlobal.h)
+! No colon-terminated (-*:) values are accepted
+Mwm.*.fontList:					-microsoft-tahoma-medium-r-normal--*-77-162-162-p-*-iso10646-1
+
+! Render tables affect MWM menus and dialogs
+! (overriding `fontList` and allowing UTF-8 labels),
+! but not window or icon titles
+Mwm.*.renderTable:				Tahoma
+
+! Iconified window. UTF-8 titles are not supported, render tables have no effect
+Mwm.*.icon.fontList:				-microsoft-tahoma-medium-r-normal--*-77-162-162-p-*-iso8859-1
+
+! Window title bar. UTF-8 titles are not supported, render tables have no effect
+Mwm.*.title.fontList:				-microsoft-tahoma-bold-r-normal--*-77-162-162-p-*-iso8859-1
+
+! Desktop menu title, dialog text
+Mwm.*.menu.*.XmLabelGadget.fontList:		-monotype-arial-bold-i-normal--*-77-162-162-p-*-iso10646-1
+Mwm.*.menu.*.XmLabelGadget.renderTable:		ArialBoldItalic
+
+! Desktop menu items, window menu items, buttons
+Mwm.*.menu.*.XmPushButtonGadget.fontList:	-microsoft-tahoma-medium-r-normal--*-77-162-162-p-*-iso10646-1
+Mwm.*.menu.*.XmPushButtonGadget.renderTable:	Tahoma
+
+! Desktop submenus
+Mwm.*.menu.*.XmCascadeButtonGadget.fontList:	-microsoft-tahoma-bold-r-normal--*-77-162-162-p-*-iso10646-1
+Mwm.*.menu.*.XmCascadeButtonGadget.renderTable:	TahomaBold
+
+! Window size and position (render tables have no effect)
+Mwm.*.feedback.fontList: 			-microsoft-tahoma-medium-r-normal--*-77-162-162-p-*-iso10646-1
+! Restart/Quit dialogs
+Mwm.*.feedback.*.renderTable: 			Tahoma

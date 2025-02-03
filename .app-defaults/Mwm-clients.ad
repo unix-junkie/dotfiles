@@ -1,0 +1,26 @@
+!
+! Mwm-clients.ad
+!
+! vim:ft=xdefaults:
+!
+
+!!!!!!!!!!!!!!!!!!!!!!
+! Per-class settings !
+!!!!!!!!!!!!!!!!!!!!!!
+
+!!Mwm*Emacs*iconImage:	/usr/local/share/emacs/21.3/etc/gnu.xpm
+!!Mwm*Emacs*iconImageForeground:	Red
+!!Mwm*Emacs*iconImageBackground:	Green
+!!Mwm*Emacs*matteWidth:		10
+!!Mwm*Eclipse*iconImage:	/opt/eclipse/icon.xpm
+Mwm*XClock*clientDecoration:		-resizeh -maximize -border
+Mwm*XClock*clientFunctions:		-resize -maximize
+!!Mwm*XClock*frameStyle:			slab
+
+! Custom window decorations per class
+Mwm*XLoad*clientDecoration:		border
+Mwm*XBiff*clientDecoration:		border
+
+! Custom window menus defined in .mwmrc
+!!Mwm*XBiff*windowMenu:			XBiffWindowMenu
+!!Mwm*windowMenu:				CustomWindowMenu

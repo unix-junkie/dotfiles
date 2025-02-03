@@ -1,0 +1,17 @@
+!
+! Mwm-colors.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "Mwm-colors-raleigh.ad"
+
+! Active window title bar and border (also `icon`, `client`, and `client*title` specifications)
+Mwm*client*title*activeBackground:				#952348
+
+! Desktop menu title
+Mwm.*.menu.*.XmLabelGadget.background:				#952348
+
+! Inactive window title bar
+Mwm*client*title*background:					#2f4f8b
+Mwm*client*title*foreground:					#bebebe

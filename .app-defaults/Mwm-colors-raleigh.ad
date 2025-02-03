@@ -1,0 +1,69 @@
+!
+! Mwm-colors.ad
+!
+! vim:ft=xdefaults:
+!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Order matters. Make sure there's no trailing space !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Default background (iconified windows, dialogs, window isize/position hint)
+Mwm.*.background:						#dcdad5
+Mwm.*.foreground:						#000000
+
+! Scrollbar background, icon box background
+Mwm.*.troughColor:						#c4c2bd
+
+! Active window title bar and border (also `icon`, `client`, and `client*title` specifications)
+Mwm.*.activeBackground:						#4b6983
+Mwm.*.activeForeground:						#ffffff
+Mwm*client*title*activeBackground:				#4b6983
+
+! Desktop and Window menus
+
+! General menu background color, incl. :
+!
+! - title (overridden below), 
+! - border,
+! - selected (but not focused) menu items, and
+! - pressed cascade buttons (slightly darker)
+!
+Mwm.*.menu.?.foreground:					#ffffff
+Mwm.*.menu.?.background:					#4b6983
+
+Mwm*menu*XmSeparatorGadget.foreground:				#000000
+Mwm*menu*XmSeparatorGadget.background:				#dcdad5
+
+! Pop-up menu items
+Mwm.*.menu.*.XmPushButton.armColor:				#4b6983
+Mwm.*.menu.*.XmPushButton.background:				#dcdad5
+Mwm.*.menu.*.XmPushButton.foreground:				#000000
+Mwm.*.menu.*.XmPushButtonGadget.armColor:			#4b6983
+Mwm.*.menu.*.XmPushButtonGadget.background:			#dcdad5
+Mwm.*.menu.*.XmPushButtonGadget.foreground:			#000000
+
+! Sub-menus
+Mwm*menu*XmCascadeButtonGadget.foreground:			#000000
+Mwm*menu*XmCascadeButtonGadget.background:			#dcdad5
+
+! Desktop menu title
+Mwm.*.menu.*.XmLabelGadget.foreground:				#ffffff
+Mwm.*.menu.*.XmLabelGadget.background:				#4b6983
+
+! Icon background and inactive icon border
+Mwm*icon*background:						#dcdad5
+
+! Inactive window border and title bar
+Mwm*client*background:						#dcdad5
+
+! Inactive window title bar
+Mwm*client*title*background:					#dcdad5
+Mwm*client*title*foreground:					#000000
+
+! Window size and position, and Restart/Quit dialogs
+Mwm*feedback*background:					#dcdad5
+
+! Dialog buttons
+Mwm*feedback*armColor:						#c4c2bd
+Mwm*feedback*highlightColor:					#4b6983

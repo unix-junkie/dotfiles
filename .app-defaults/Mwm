@@ -4,108 +4,37 @@
 ! vim:ft=xdefaults:
 !
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! Colors. Order matters. Make sure there's no trailing space !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#include "Mwm-clients.ad"
+#include "Mwm-colors.ad"
+#include "Mwm-fonts.ad"
 
-! Default background (iconified windows, dialogs, window isize/position hint)
-Mwm*background:					#dcdad5
-Mwm*foreground:					#000000
+Mwm.*.enableEtchedInMenu:	True
+Mwm.*.shadowThickness:		1
+Mwm.*.highlightThickness:	1
 
-! Scrollbar background, icon box background
-Mwm*troughColor:				#c4c2bd
-
-! Active window title bar and border
-Mwm*activeBackground:				#952348
-Mwm*activeForeground:				#ffffff
-
-! Inactive window title bar
-Mwm*XmRowColumn*background:			#2f4f8b
-Mwm*XmRowColumn*foreground:			#bebebe
-
-! Desktop and window menus
-Mwm*menu*armColor:				#4b6983
-Mwm*menu*background:				#dcdad5
-Mwm*menu*foreground:				#000000
-
-! Desktop menu title
-Mwm*menu*XmLabelGadget*background:		#4b6983
-Mwm*menu*XmLabelGadget*foreground:		#ffffff
-Mwm*XmRowColumn*XmLabelGadget*background:	#4b6983
-Mwm*XmRowColumn*XmLabelGadget*foreground:	#ffffff
-
-! Dialog buttons
-Mwm*XmPushButtonGadget*armColor:		#c4c2bd
-Mwm*XmPushButtonGadget*highlightColor:		#b24d7a
-
-! Submenus
-! Overridden by Mwm*menu*foreground
-Mwm*XmCascadeButtonGadget.foreground:		#000000
-! Overridden by Mwm*menu*background
-Mwm*XmCascadeButtonGadget.background:		#dcdad5
+! Pop-up menus
+! MWM has problems animating menus
+Mwm.*.XmMenuShell.animate:	False
 
 
-! Menu behaviour
-Mwm*enableEtchedInMenu:	True
-Mwm*shadowThickness:	1
+! General Appearance and Behavior Resources
+Mwm.*.showFeedback:		behavior kill move placement resize restart quit
 
-Mwm*iconPlacement:	top left tight
-*.moveOpaque: True
-Mwm*rootButtonClick:	True
-Mwm*multiScreen:	True
-Mwm*tearOffModel:	tear_off_disabled
-Mwm*useIconBox:		False
-Mwm*frameStyle:			slab
 
-Mwm*useDtLite:		True
-Mwm*UseDtLite:		True
-Mwm.useDtLite:		True
-Mwm.UseDtLite:		True
+! Screen Specific Resources
+! True: XmStringDrawImage()/XDrawImageString(),
+! False: XmStringDraw()/XDrawString().
+Mwm.*.cleanText:		False
+Mwm.*.moveOpaque:		True
+!Mwm.*.iconDecoration:		activeLabel label image
+Mwm.*.iconDecoration:		activeLabel image
 
-Mwm*blinkOnExec:	True
-Mwm*BlinkOnExec:	True
-Mwm.blinkOnExec:	True
-Mwm.BlinkOnExec:	True
+Mwm.*.iconPlacement:		top left tight
+Mwm.*.rootButtonClick:		True
+Mwm.*.multiScreen:		True
 
-!!!!!!!!!
-! Fonts !
-!!!!!!!!!
+! `tear_off_enabled` makes MWM behave unpredictably and hang.
+Mwm.*.tearOffModel:		tear_off_disabled
 
-! All fonts everywhere
-Mwm*FontList:			-monotype-arial-medium-r-normal--*-120-*-*-p-*-iso10646-1
-
-! Iconified window. UTF-8 titles are not supported
-Mwm*icon*FontList:		-monotype-arial-medium-r-normal--*-100-*-*-p-*-iso8859-1
-
-! Window title bar. UTF-8 titles are not supported
-Mwm*title*FontList:		-monotype-arial-bold-r-normal--*-120-*-*-p-*-iso8859-1
-
-! Desktop menu title, dialog text
-Mwm*XmLabelGadget*FontList:		-monotype-arial-bold-i-normal--*-100-*-*-p-*-iso10646-1
-
-! Desktop menu items, window menu items, buttons
-Mwm*XmPushButtonGadget*FontList:	-monotype-arial-medium-r-normal--*-100-*-*-p-*-iso10646-1
-
-! Desktop submenus
-Mwm*XmCascadeButtonGadget*FontList:	-monotype-arial-bold-r-normal--*-100-*-*-p-*-iso10646-1
-
-!!!!!!!!!!!!!!!!!!!!!!
-! Per-class settings !
-!!!!!!!!!!!!!!!!!!!!!!
-
-!!Mwm*Emacs*iconImage:	/usr/local/share/emacs/21.3/etc/gnu.xpm
-!!Mwm*Emacs*iconImageForeground:	Red
-!!Mwm*Emacs*iconImageBackground:	Green
-!!Mwm*Emacs*matteWidth:		10
-!!Mwm*Eclipse*iconImage:	/opt/eclipse/icon.xpm
-Mwm*XClock*clientDecoration:		-resizeh -maximize -border
-Mwm*XClock*clientFunctions:		-resize -maximize
-!!Mwm*XClock*frameStyle:			slab
-
-! Custom window decorations per class
-Mwm*XLoad*clientDecoration:		border
-Mwm*XBiff*clientDecoration:		border
-
-! Custom window menus defined in .mwmrc
-!!Mwm*XBiff*windowMenu:			XBiffWindowMenu
-!!Mwm*windowMenu:				CustomWindowMenu
+Mwm.*.useIconBox:		False
+Mwm.*.frameStyle:		slab

@@ -1,0 +1,35 @@
+!
+! Mwm-colors.ad
+!
+! vim:ft=xdefaults:
+!
+
+#include "Mwm-colors-raleigh.ad"
+
+! Active window title bar and border (also `icon`, `client`, and `client*title` specifications)
+Mwm.*.activeBackground:						#666699
+Mwm*client*title*activeForeground:				#000000
+Mwm*client*title*activeBackground:				#ccccff
+
+! Desktop and Window menus
+
+Mwm.*.menu.?.background:					#9999cc
+
+! Pop-up menu items
+Mwm.*.menu.*.XmPushButton.armColor:				#9999cc
+Mwm.*.menu.*.XmPushButtonGadget.armColor:			#9999cc
+
+! Desktop menu title
+Mwm.*.menu.*.XmLabelGadget.foreground:				#000000
+Mwm.*.menu.*.XmLabelGadget.background:				#ccccff
+
+! Inactive window border and title bar
+Mwm*client*background:						#666666
+
+! Inactive window title bar
+Mwm*client*title*background:					#cccccc
+Mwm*client*title*foreground:					#000000
+
+! Dialog buttons
+Mwm*feedback*armColor:						#999999
+Mwm*feedback*highlightColor:					#9999cc
