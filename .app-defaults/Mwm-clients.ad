@@ -21,6 +21,18 @@ Mwm*XClock*clientFunctions:		-resize -maximize
 Mwm*XLoad*clientDecoration:		border
 Mwm*XBiff*clientDecoration:		border
 
+Mwm*Vim*iconImage:		/usr/share/icons/hicolor/48x48/apps/gvim.png
+Mwm*Vim*matteBackground:	#073642
+Mwm*Vim*matteWidth:		0
+Mwm*Vim*useClientIcon:		False
+Mwm*Vim*windowMenu:		DefaultWindowMenu
+
+Mwm*XTerm*iconImage:		/usr/share/icons/hicolor/48x48/apps/xterm-color.png
+Mwm*XTerm*useClientIcon:	False
+
+Mwm*QtCreator*iconImage:	/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png
+Mwm*QtCreator*useClientIcon:	False
+
 ! Custom window menus defined in .mwmrc
 !!Mwm*XBiff*windowMenu:			XBiffWindowMenu
 !!Mwm*windowMenu:				CustomWindowMenu
