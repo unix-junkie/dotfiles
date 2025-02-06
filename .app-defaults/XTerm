@@ -67,3 +67,9 @@ XTerm.*.Scrollbar.background:	#c4c2bd
 *VT100*translations:    #override \n\
 	Ctrl <KeyPress> Insert: copy-selection(CLIPBOARD) \n\
 	Shift <KeyPress> Insert: insert-selection(CLIPBOARD)
+
+! Sixel graphics
+! See <https://codeberg.org/coffee/sixel-experiments>.
+*.vt100.decTerminalID: vt340
+*.vt100.numColorRegisters: 256
+*.vt100.disallowedWindowOps: 1,2,3,4,5,6,7,8,9,11,13,19,20,21,GetSelection,SetSelection,SetWinLines,SetXprop
