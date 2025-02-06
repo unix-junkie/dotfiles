@@ -17,6 +17,10 @@ Mwm*XClock*clientDecoration:		-resizeh -maximize -border
 Mwm*XClock*clientFunctions:		-resize -maximize
 !!Mwm*XClock*frameStyle:			slab
 
+Mwm*VirtualBox Manager*iconImage:	/usr/share/icons/hicolor/48x48/apps/virtualbox.png
+Mwm*Vivaldi-stable*iconImage:		/opt/vivaldi/resources/vivaldi/resources/icon_128.png
+Mwm*libreoffice-calc*iconImage:		/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png
+
 ! Custom window decorations per class
 Mwm*XLoad*clientDecoration:		border
 Mwm*XBiff*clientDecoration:		border
