@@ -23,14 +23,6 @@ export LC_MESSAGES='C'
 
 [ -f ~/.bashrc ] && . ~/.bashrc
 
-if [ -d ~/.bash_profile.d ]
-then
-	for f in $(find ~/.bash_profile.d -type f)
-	do
-		. "${f}"
-	done
-fi
-
 # Common
 #export VISUAL='vim'
 export VISUAL='emacsclient -a "" -c -nw'
@@ -112,6 +104,24 @@ ${PATH}:\
 /opt/acroread/bin:\
 ${ORACLE_HOME}/bin:\
 ${HOME}/bin"
+
+if [[ -d '/home/linuxbrew/.linuxbrew/bin' ]]
+then
+	export PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+fi
+
+if [[ -x "/home/linuxbrew/.linuxbrew/bin/atuin" ]]
+then
+	eval "$(atuin init bash)"
+fi
+
+if [ -d ~/.bash_profile.d ]
+then
+	for f in $(find ~/.bash_profile.d -type f)
+	do
+		. "${f}"
+	done
+fi
 
 # X11
 export XAPPLRESDIR="${HOME}/.app-defaults"

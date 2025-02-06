@@ -171,3 +171,9 @@ else
 	##fortune lorquotes | iconv -f UTF-8 -t $(locale charmap)
 	(fortune lorquotes 2>/dev/null || fortune) | cowsay
 fi
+
+# ble.sh, required for atuin to work.
+if [[ -f "${HOME}/.local/share/blesh/ble.sh" ]]
+then
+	. "${HOME}/.local/share/blesh/ble.sh"
+fi
