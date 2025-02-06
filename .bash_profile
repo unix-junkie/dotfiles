@@ -162,6 +162,9 @@ fi
 # gvfsd
 export GVFS_DISABLE_FUSE=1
 
+# LibreOffice
+export SAL_USE_VCLPLUGIN='qt5'
+
 # Fix PuTTY line drawing in UTF-8 mode.
 if [ "$(locale charmap)" = 'UTF-8' ] && [[ "${TERM}" =~ ^xterm.*$ ]]
 then
