@@ -2,8 +2,10 @@
 #
 # ~/.xinitrc
 #
-# vim:ft=sh:
+# vim:ft=sh fdm=indent:
 #
+
+declare -r background_image=~/docs/pics/Гагарин.jpg
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I${HOME} ~/.Xresources
 
@@ -83,5 +85,11 @@ then
 fi
 
 xscreensaver -no-splash &
+
+xsetroot -solid '#9999cc'
+if [[ -f "${background_image}" ]] && command -v feh >/dev/null 2>&1
+then
+	feh --bg-fill "${background_image}"
+fi
 
 exec x-window-manager || exec wmaker || exec mwm || exec twm
