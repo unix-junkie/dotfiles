@@ -52,10 +52,13 @@ if [ $(uname -s) == 'DragonFly' ]
 then
 	JAVA_HOME='/usr/local/openjdk8'
 else
-	JAVA_HOME='/usr/lib/jvm/oracle-java8-jdk-amd64'
+	JAVA_HOME='/usr/lib/jvm/zulu-fx-17-amd64'
 fi
 export JAVA_HOME
-export JRE_HOME="${JAVA_HOME}/jre"
+if [ -d "${JAVA_HOME}/jre" ]
+then
+	export JRE_HOME="${JAVA_HOME}/jre"
+fi
 #export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.motif.MotifLookAndFeel'
 export _JAVA_OPTIONS='-Dswing.defaultlaf=javax.swing.plaf.metal.MetalLookAndFeel -Dswing.metalTheme=steel -Dswing.noxp=true -Dswing.aatext=false -Dswing.plaf.metal.controlFont="Arial-BOLD-12" -Dswing.plaf.metal.userFont="Arial--12" -Dswing.plaf.metal.systemFont="Arial--11" -Dswing.plaf.metal.smallFont="Arial--10"'
 export _JAVA_OPTIONS="${_JAVA_OPTIONS} -Djdk.gtk.version=2"
