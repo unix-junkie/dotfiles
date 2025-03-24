@@ -1,0 +1,12 @@
+#
+# ~/.gtkrc
+# See <https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes> for details.
+#
+# vim:ft=gtkrc:
+#
+
+style "default-text" {
+	fontset = "-monotype-arial-medium-r-normal--*-77-162-162-p-*-*-*"
+}
+
+widget "*" style "default-text"
