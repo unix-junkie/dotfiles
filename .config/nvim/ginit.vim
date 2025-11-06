@@ -14,4 +14,6 @@ if exists('g:GuiLoaded')
 	inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
 	xnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
 	snoremap <silent><RightMouse> <C-G>:call GuiShowContextMenu()<CR>gv
+
+	nnoremap <A-CR> :call GuiWindowFullScreen(!g:GuiWindowFullScreen)<CR>
 endif
