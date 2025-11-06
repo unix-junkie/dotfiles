@@ -21,9 +21,11 @@ vim.cmd([[
 		endif
 		set hlsearch
 	endif
+]])
 
-	if has('gui_running')
-		if exists('g:fvim_loaded')
+if vim.fn.has("gui_running") == 1 then
+	if vim.g.fvim_loaded == 1 then
+		vim.cmd([[
 			if g:fvim_os == 'windows' || g:fvim_render_scale > 1.0
 				set guifont=Courier\ New:h16
 			else
@@ -33,13 +35,15 @@ vim.cmd([[
 			nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
 			nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
 			nnoremap <A-CR> :FVimToggleFullScreen<CR>
+		]])
 
-			set clipboard=unnamedplus
-		elseif exists('g:gui_dotnvim')
-			" https://github.com/dontpanic92/dotnvim 
-			set guifont=Courier\ New:h12
-		elseif exists('g:neoray')
-			set guifont=Courier\ New:h12
+		vim.o.clipboard = "unnamedplus"
+	elseif vim.g.gui_dotnvim == 1 then
+		-- https://github.com/dontpanic92/dotnvim
+		vim.o.guifont = "Courier New:h12"
+	elseif vim.g.neoray == 1 then
+		vim.o.guifont = "Courier New:h12"
+		vim.cmd([[
 			NeoraySet CursorAnimTime 0.08
 			NeoraySet Transparency   0.95
 			NeoraySet TargetTPS      120
@@ -51,16 +55,22 @@ vim.cmd([[
 			NeoraySet KeyFullscreen  <M-CR>
 			NeoraySet KeyZoomIn      <C-ScrollWheelUp>
 			NeoraySet KeyZoomOut     <C-ScrollWheelDown>
-		elseif exists('g:neovide')
-			set guifont=Courier\ New:h12:#e-alias
-		elseif exists('g:nvui')
-			set guifont=Courier\ New:h12
+		]])
+	elseif vim.g.neovide then
+		vim.o.guifont = "Courier New:h12:#e-alias"
+		vim.o.clipboard = "unnamedplus"
+		vim.cmd([[
+			nnoremap <A-CR> :let g:neovide_fullscreen = !g:neovide_fullscreen<CR>
+		]])
+	elseif vim.g.nvui then
+		vim.o.guifont = "Courier New:h12"
+		vim.cmd([[
 			nnoremap <A-CR> :NvuiToggleFullscreen<CR>
-		elseif exists('g:nvy')
-			set guifont=Courier\ New:h12
-		endif
-	endif
-]])
+		]])
+	elseif vim.g.nvy == 1 then
+		vim.o.guifont = "Courier New:h12"
+	end
+end
 
 -- Menu BEGIN
 vim.opt.wildmenu=true
