@@ -59,9 +59,7 @@ if vim.fn.has("gui_running") == 1 then
 	elseif vim.g.neovide then
 		vim.o.guifont = "Courier New:h12:#e-alias"
 		vim.o.clipboard = "unnamedplus"
-		vim.cmd([[
-			nnoremap <A-CR> :let g:neovide_fullscreen = !g:neovide_fullscreen<CR>
-		]])
+		vim.fn.execute('nnoremap <A-CR> :let g:neovide_fullscreen = !g:neovide_fullscreen<CR>')
 	elseif vim.g.nvui then
 		vim.o.guifont = "Courier New:h12"
 		vim.cmd([[
@@ -71,6 +69,33 @@ if vim.fn.has("gui_running") == 1 then
 		vim.o.guifont = "Courier New:h12"
 	end
 end
+
+-- nvim-qt BEGIN
+vim.api.nvim_create_autocmd({ "UIEnter" }, {
+	callback = function()
+		local channel_id = vim.v.event.chan
+		-- Defer code here, otherwise get chan info will not return
+		vim.defer_fn(function()
+			local client_name = vim.api.nvim_get_chan_info(channel_id).client.name
+			if client_name == 'nvim-qt' then
+				-- https://github.com/equalsraf/neovim-qt
+				vim.fn.execute('GuiFont Courier\\ New:h12')
+				vim.fn.execute('GuiTabline 0')
+				vim.fn.execute('GuiPopupmenu 0')
+				vim.fn.execute('GuiScrollBar 0')
+
+				-- Right Click Context Menu (Copy-Cut-Paste)
+				vim.fn.execute('nnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>')
+				vim.fn.execute('inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>')
+				vim.fn.execute('xnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv')
+				vim.fn.execute('snoremap <silent><RightMouse> <C-G>:call GuiShowContextMenu()<CR>gv')
+
+				vim.fn.execute('nnoremap <A-CR> :call GuiWindowFullScreen(!g:GuiWindowFullScreen)<CR>')
+			end
+		end, 0)
+	end
+})
+-- nvim-qt END
 
 -- Menu BEGIN
 vim.opt.wildmenu=true
